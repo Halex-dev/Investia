@@ -42,7 +42,7 @@ const customLogger = new Logger('TypeORM');
         password: configService.get('DB_PASSWORD'),
         database: configService.get('DB_NAME'),
         entities: [User, Transaction, Category],
-        synchronize: configService.get('NODE_ENV') !== 'production',
+        synchronize: false,
         logging: configService.get('NODE_ENV') !== 'production',
         logger: {
           log: (level, message) => customLogger.log(message),

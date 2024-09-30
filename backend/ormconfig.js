@@ -9,4 +9,4 @@ export const migrations = ['dist/migrations/*{.ts,.js}'];
 export const cli = {
   migrationsDir: 'src/migrations',
 };
-export const synchronize = false;
+export const synchronize = true;
